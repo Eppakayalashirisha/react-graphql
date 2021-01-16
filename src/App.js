@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+
 import Stations from './Stations';
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,13 +33,13 @@ class App extends React.Component {
         <div className="container">
         
           <div>
-          <table class="table table-striped table-bordered" id="example">
+          <table className="table table-striped table-bordered" id="example">
             <thead>
             
-            <tr>
+            <tr id="row1">
                 <th>Name</th>
-                <th>Docks available</th>
                 <th>Bikes available</th>
+                <th>Docks available</th>
             </tr>
             </thead>
             <tbody>
@@ -53,16 +54,16 @@ class App extends React.Component {
     return (
     
       <div className="maincontainer mb-5">
-         <div class="top-header d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-dark border-bottom box-shadow">
-            <h5 class="my-0 mr-md-auto font-weight-normal">Demo App</h5>
-            <nav class="my-2 my-md-0 mr-md-3">
-              <a class="p-2 text-dark" href="#">Home</a>
+         <div className="top-header d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-dark border-bottom box-shadow">
+            <h5 className="my-0 mr-md-auto font-weight-normal">Demo App</h5>
+            <nav className="my-2 my-md-0 mr-md-3">
+              <a href="#" className="p-2 text-dark" >Home</a>
             </nav>
           </div>
 
-          <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mb-5 mx-auto text-center">
-            <h1 class="display-4">Stations</h1>
-            <p class="lead">Here we are getting stations details and num docks availables and num docks availables</p>
+          <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mb-5 mx-auto text-center">
+            <h1 className="display-4" id="display">Stations</h1>
+            <p className="lead" id="lead">Details of stations Where Bikes and Docks availables</p>
           </div>
       
        <App />

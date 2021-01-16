@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap");
 html {
   font-size: 14px;
 }
@@ -7,12 +8,27 @@ html {
   }
 }
 
+#display {
+  font-family: "poppins" sans-serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
 .container {
   max-width: 960px;
 }
 
 .pricing-header {
-  background-color: #eff3fe;
+  color: #ffffff;
+  background-color: #0081a7;
+}
+
+#lead {
+  font-family: "poppins" sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .card-deck .card {
@@ -25,7 +41,11 @@ html {
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
 }
-
+#row1 {
+  color: #ffffff;
+  background-color: #0081a7;
+  border: 1px solid #00afb9;
+}
 .box-shadow {
   box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
@@ -35,4 +55,39 @@ html {
 }
 .top-header a {
   color: #ffffff !important;
+}
+table.dataTable thead .sorting_asc {
+  background-image: none;
+}
+table td,
+table th {
+  border: 1px solid #00afb9;
+}
+#example td,
+#example th {
+  border: 1px solid #00afb9;
+}
+#example {
+  border-bottom: 0.5px solid #00afb9;
+}
+select,
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #00afb9 !important;
+}
+
+.sorting_1,
+#example_info {
+  font-family: "poppins" sans-serif !important;
+  font-weight: 400 !important;
+}
+.paginate_button.current,
+.paginate_button.current:hover {
+  color: white !important;
+  border: 1px solid #00afb9 !important;
+}
+.paginate_button:hover {
+  color: white !important;
+  border: 1px solid #00afb9 !important;
+  background-color: #0081a7 !important;
+  background: linear-gradient(to bottom, #0081a7 0%, #00afb9 100%) !important;
 }
