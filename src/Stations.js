@@ -8,7 +8,8 @@ const Stations = () => (
       {
         stations
         {
-            name
+            
+          name
             availability{
             num_docks_available
             num_bikes_available
@@ -22,7 +23,7 @@ const Stations = () => (
       if (loading) return <p>Loading...</p>;
       if (error) return <p>Error :(</p>;
       return data.stations.map((station) => (
-        <tr>
+        <tr key='${station.id}'>
           <td>{`${station.name}`}</td>
           <td>{`${station.availability.num_docks_available}`}</td>
           <td>{`${station.availability.num_bikes_available}`}</td>
