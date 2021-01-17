@@ -21,8 +21,8 @@ const Stations = () => (
   >
     {({ loading, error, data }) => {
       
-      if (loading) return <p>Loading...</p>;
-      if (error) return <p>Error :</p>;
+      if (loading) return <tr><td><p>Loading...</p></td></tr>
+      if (error) return <tr><td><p>Error :</p></td></tr>
       return data.stations.map((station) => (
         <tr key={station.station_id}>
           <td>{`${station.name}`}</td>
